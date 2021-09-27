@@ -25,6 +25,9 @@ body {
     -webkit-font-smoothing: antialiased;
     background-color: #fff;
 }
+p{
+    margin-bottom: 0;
+}
 .container{
     max-width: 1200px;
 }
@@ -455,8 +458,6 @@ body {
     left: 9%;
     border-radius: 60px 0 0 60px;
 }
-
-
 .main-questions__block{
     position: relative;
     padding-top: 92px;
@@ -515,11 +516,13 @@ body {
     width: 387px;
     margin: 0 50px 0 80px;
 }
-.main-questions__item h2{
+.main-h2 h2{
     font-size: 38px;
     line-height: 1.4;
     font-family: 'Raleway';
     font-weight: 800;
+}
+.main-questions__item h2{
     text-align: center;
 }
 .main-questions__item h2::before{
@@ -594,6 +597,68 @@ body {
     top: -23px;
     left: -50%;
     transform: translateX(-1%);
+}
+.answer-block-1 {
+    background-color: #e9be32;
+    padding-top: 76px;
+}
+.phone-answer {
+    position: relative;
+    height: 100%;
+    margin-left: 83px;
+}
+.phone-answer-img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+.phone-answer::before{
+    display: block;
+    position: absolute;
+    content: url(/assets/img/phone-bg.png);
+    bottom: -8px;
+    left: -190px;
+    z-index: 1;
+}
+.phone-answer-text{
+    font-size: 13px;
+    line-height: 1.62;
+}
+.phone-answer-text-1 {
+    position: absolute;
+    top: 32px;
+    left: 60px;
+    z-index: 2;
+    width: 180px;
+}
+.phone-answer-text-2 {
+    position: absolute;
+    top: 174px;
+    left: 74px;
+    z-index: 2;
+    width: 200px;
+}
+.answer-block-1-desc {
+}
+.answer-block-1-desc h2{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.answer-block-1-text {
+    position: relative;
+    background-color: #fff;
+    padding: 25px 30px 25px 50px;
+    margin-bottom: 85px;
+    margin-left: 5px;
+    border-radius: 9px;
+}
+.answer-block-1-text::before{
+    display: block;
+    content: url(/assets/img/icons/exclamation-point.png);
+    position: absolute;
+    left: 20px;
+    top: 25px;
 }
 
 /* Медиа */
