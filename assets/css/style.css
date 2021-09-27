@@ -616,7 +616,7 @@ p{
 .phone-answer::before{
     display: block;
     position: absolute;
-    content: url(/assets/img/phone-bg.png);
+    content: url(../img/phone-bg.png);
     bottom: -8px;
     left: -190px;
     z-index: 1;
