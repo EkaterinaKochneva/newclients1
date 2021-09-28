@@ -639,8 +639,6 @@ p{
     z-index: 2;
     width: 200px;
 }
-.answer-block-1-desc {
-}
 .answer-block-1-desc h2{
     color: #fff;
     margin-bottom: 20px;
@@ -655,12 +653,62 @@ p{
 }
 .answer-block-1-text::before{
     display: block;
-    content: url(/assets/img/icons/exclamation-point.png);
+    content: url(../img/icons/exclamation-point.png);
     position: absolute;
     left: 20px;
     top: 25px;
 }
-
+.answer-block-2{
+    position: relative;
+    padding-top: 93px;
+    padding-bottom: 110px;
+    background: linear-gradient(to top,rgba(255,255,255,0),#e9bd32);
+}
+.answer-block-2::before{
+    position: absolute;
+    display: block;
+    content: "";
+    background: url(../img/wonder-woman.jpg) center right no-repeat, #fff;
+    height: 100%;
+    width: 91%;
+    top: 0;
+    right: 9%;
+    border-radius: 0 60px 60px 0;
+}
+.answer-block-2 .container{
+    position: relative;
+}
+.answer-block-2-desc .main-h2{
+    margin-bottom: 32px;
+}
+.answer-block-2-text{
+    position: relative;
+    margin-bottom: 40px;
+}
+.answer-block-2-text p{
+    margin-bottom: 25px;
+}
+.answer-block-2-text::after{
+    position: absolute;
+    content: url(../img/icons/arrow.png);
+    top: 17%;
+    right: -3px;
+    transform: rotate(27deg) scale(-1, 1);
+}
+.return-guarantee-text{
+    margin-top: 12px;
+    width: 237px;
+    font-size: 13px;
+    line-height: 1.62;
+    background-color: #fbf2d6;
+    padding: 20px 12px 20px 25px;
+    border-radius: 9px;
+}
+.return-guarantee-text em{
+    display: block;
+    color: #80673c;
+    margin-top: 10px;
+}
 /* Медиа */
 @media (max-width: 992px){
     .container{
