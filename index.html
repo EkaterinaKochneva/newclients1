@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="assets/css/twentytwenty.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
     <title>Title</title>
@@ -130,7 +133,7 @@
                 <div class="col-md-5 col-12">
                     <div class="intro-man__block">
                         <div class="intro-benefits">
-                            <ul class="benefits-list">
+                            <ul class="check-list benefits-list">
                                 <li>Ежедневные понятные отчёты о работах
                                 </li>
                                 <li>Ни один наш клиент не&nbsp;ушёл от нас за  последние 1,5 года</li>
@@ -294,16 +297,305 @@
             <div class="cases-block__desc cases-block__desc--2">
                 <p>Мы не вносим изменения бездумно. Анализируем сайт, выясняем где у него пробелы, согласуем с вами. Если сайт уже хорош, мы не будем его менять</p>
             </div>
-            <div class="cases-slider">
-                <img src="assets/img/cases-slider.jpg" alt="">
+            <div class="cases-slider__block">
+                <div class="cases-slider__before">Сайт до заказа SEO у нас</div>
+                <div class="cases-slider__after">Сайт, который у нас в работе</div>
+                <div class="cases-slider__wrapper">
+                    <div class="cases-slider">
+                        <div class="cases-slider__item">
+                            <div class="before-after"> 
+                                <!-- Картинка  "до" -->
+                                <img src="assets/img/cases/case-1.jpg" alt="Сайт Лидер ДО"/>                   
+                                <!-- Картинка  "после" -->
+                                <img src="assets/img/cases/case-2.jpg" alt="Сайт Лидер После"/>                     
+                            </div>
+                        </div>
+                        <div class="cases-slider__item">
+                            <div class="before-after"> 
+                                <!-- Картинка  "до" -->
+                                <img src="assets/img/cases/case-4.jpg" alt="Сайт АйЭмДом ДО"/>                   
+                                <!-- Картинка  "после" -->
+                                <img src="assets/img/cases/case-3.jpg" alt="Сайт АйЭмДом После"/>                     
+                            </div>
+                        </div>    
+                        <div class="cases-slider__item">
+                            <div class="before-after"> 
+                                <!-- Картинка  "до" -->
+                                <img src="assets/img/cases/case-6.jpg" alt="Сайт Рестрой ДО"/>                   
+                                <!-- Картинка  "после" -->
+                                <img src="assets/img/cases/case-5.jpg" alt="Сайт Рестрой После"/>                     
+                            </div>
+                        </div>    
+                        <div class="cases-slider__item">
+                            <div class="before-after"> 
+                                <!-- Картинка  "до" -->
+                                <img src="assets/img/cases/case-8.jpg" alt="Сайт Колодец на даче ДО"/>                   
+                                <!-- Картинка  "после" -->
+                                <img src="assets/img/cases/case-7.jpg" alt="Сайт Колодец на даче После"/>                     
+                            </div>
+                        </div>   
+                        <div class="cases-slider__item">
+                            <div class="before-after"> 
+                                <!-- Картинка  "до" -->
+                                <img src="assets/img/cases/case-10.jpg" alt="Сайт Глав-Сваи ДО"/>                   
+                                <!-- Картинка  "после" -->
+                                <img src="assets/img/cases/case-9.jpg" alt="Сайт Глав-Сваи После"/>                     
+                            </div>
+                        </div>      
+                    </div>
+                </div>
             </div>
             <button class="main-button">Рассчитать стоимость SEO с бесплатными доработками</button>
-
+        </div>
+    </section><!-- /Cases-block -->
+<!--Results-bsection-->
+    <section class="results-section">
+        <div class="container">
+            <div class="results-block">
+                <div class="row justify-content-md-end">
+                    <div class="col-md-6 col-12">
+                        <div class="main-h2">
+                            <h2>Вы каждый день видите рост позиций от нашей работы</h2>
+                        </div>
+                        <ul class="check-list">
+                            <li>
+                                Вы имеете доступ к таблице, где <b>ежедневно обновляется KPI по позициям</b> и видно динамику
+                            </li>
+                            <li>У вас есть гостевой доступ к SEO-сервису <b>на отслеживание роста позиций</b></li>
+                            <li>Вы согласовываете <b>3-5 визуальных элемента ежемесячно</b> и наблюдаете как они появляются на сайте</li>
+                            <li><b>Вы ощущаете рост заявок</b> с сайта и звонков и видите точное их число в наших отчётах</li>
+                            <li>Вы можете задавать вопросы с 9:00-22:00 ежедневно, <b>ответим максимум в течение часа</b>. Если что-то не понятно — объясним, если какая-то задача — решим.</li>
+        
+                        </ul>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </section><!--/Results-section-->
+    <!--Stock-section-->
+    <section class="stock-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <div class="main-h2 stock-section-h2">
+                        <h2>Рассчитайте стоимость вашего проекта и получите аудит в рамках акции</h2>                        
+                    </div>
+                    <div class="stock-section-text">
+                        <b>Аудит проведёт не робот,</b> а лично наш ведущий SEO-специалист с опытом более 6 лет
+                    </div>
+                    <div class="stock-section-subtext">
+                        Обычно аудит проводим только после заключения договора, но сейчас мы готовы взять несколько новых клиентов и даём его бесплатно в рамках акции
+                    </div>
+                    <button class="main-button">Отправить ссылку на сайт и получить аудит по акции</button>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="stock-check-list">
+                        <b>Аудит включает в себя:</b>
+                        <ul class="check-list ">
+                            <li><span>Чек-лист по сайту</span>
+                                <br>
+                                (100 параметров в формате есть/нет)
+                            </li>
+                            <li>
+                                <span>Анализ конкурентов</span> (5-10)
+                            </li>
+                            <li>
+                                <span>Сам аудит</span> (выводы в формате Word
+                                как именно будет продвигаться сайт)
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
         </div>
 
-    </section><!-- /Cases-block -->
+    </section><!--/Stock-section-->
+    <!--Make_sure-section-->
+    <section class="make-sure">
+        <div class="container">
+            <div class="row justify-content-md-between">
+                <div class="col-md-5 col-12">
+                    <div class="main-h2 make-sure-h2">
+                        <h2>Убедитесь сами, что мы действительно знаем как <span>вывести вас в ТОП</span></h2>
+                    </div>
+                    <div class="make-sure-desc">
+                        Этапы нашей работы в следующие 6 месяцев, расписали по шагам, но многое делаем параллельно
+                    </div>
+                    <div class="make-sure-tabs">
+                        <ul class="nav nav-tabs" role="tablist" id="makeSureTabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="1-tab" href="#tab-1" 
+                                aria-controls="tab-1" aria-selected="true" data-bs-toggle="tab" >1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="2-tab" href="#tab-2" 
+                                aria-controls="tab-2" aria-selected="true" data-bs-toggle="tab" >2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="3-tab" href="#tab-3" 
+                                aria-controls="tab-3" aria-selected="true" data-bs-toggle="tab" >3</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="4-tab" href="#tab-4" 
+                                aria-controls="tab-4" aria-selected="true" data-bs-toggle="tab" >4</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="5-tab" href="#tab-5" 
+                                aria-controls="tab-5" aria-selected="true" data-bs-toggle="tab" >5</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="6-tab" href="#tab-6" 
+                                aria-controls="tab-6" aria-selected="true" data-bs-toggle="tab" >6</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="7-tab" href="#tab-7" 
+                                aria-controls="tab-7" aria-selected="true" data-bs-toggle="tab" >7</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="8-tab" href="#tab-8" 
+                                aria-controls="tab-8" aria-selected="true" data-bs-toggle="tab" >8</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="9-tab" href="#tab-9" 
+                                aria-controls="tab-9" aria-selected="true" data-bs-toggle="tab" >9</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="10-tab" href="#tab-10" 
+                                aria-controls="tab-10" aria-selected="true" data-bs-toggle="tab" >10</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="11-tab" href="#tab-11" 
+                                aria-controls="tab-11" aria-selected="true" data-bs-toggle="tab" >11</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="12-tab" href="#tab-12" 
+                                aria-controls="tab-12" aria-selected="true" data-bs-toggle="tab" >12</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="13-tab" href="#tab-13" 
+                                aria-controls="tab-13" aria-selected="true" data-bs-toggle="tab" >13</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="14-tab" href="#tab-14" 
+                                aria-controls="tab-14" aria-selected="true" data-bs-toggle="tab" >14</a>
+                            </li>
+                        </ul>
+                    </div>
 
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="make-sure-content">
+                        <div class="tab-content" id="makeSureContent">
+                            <div class="tab-pane active" id="tab-1"  role="tabpanel">
+                            <div class="make-sure-title">
+                                1. Анализ конкурентов по тематике
+                            </div>
+                                
+                            </div>
+                            <div class="tab-pane" id="tab-2"
+                            role="tabpanel">
+                            <div class="make-sure-title">
+                                2. Чек-лист
+                            </div>
+                                
+                            </div>
+                            <div class="tab-pane" id="tab-3"
+                            role="tabpanel">
+                            <div class="make-sure-title">
+                                3. Проработка структуры сайта
+                            </div>
 
+                            </div>
+                            <div class="tab-pane" id="tab-4"
+                            role="tabpanel">
+                            <div class="make-sure-title">
+                                4. Подготовка к оптимизации
+                            </div>
+                            
+                            </div>
+                            <div class="tab-pane" id="tab-5"
+                            role="tabpanel">
+                            <div class="make-sure-title">
+                                5. Юзабилити, поведенческий фактор
+                            </div>
+                            
+                            </div>
+                            <div class="tab-pane" id="tab-6"
+                            role="tabpanel">
+                            <div class="make-sure-title">
+                                6. Статьи и копирайтинг
+                            </div>
+                            
+                            </div>
+                            <div class="tab-pane" id="tab-7"
+                            role="tabpanel">
+                            <div class="make-sure-title">
+                                7. Подключение сервисов и аналитика
+                            </div>
+                            
+                            </div>
+                            <div class="tab-pane" id="tab-8"
+                            role="tabpanel">
+                            <div class="make-sure-title">
+                                8. Регулярные работы
+                            </div>
+                            
+                            </div>
+                            <div class="tab-pane" id="tab-9"
+                            role="tabpanel">
+                            <div class="make-sure-title">
+                                9. Отчетность
+                            </div>
+                            
+                            </div>
+                            <div class="tab-pane" id="tab-10"
+                            role="tabpanel">
+                            <div class="make-sure-title">
+                                10. Корректировка планов, стратегии
+                            </div>
+                            
+                            </div>
+                            <div class="tab-pane" id="tab-11"
+                            role="tabpanel">
+                            <div class="make-sure-title">
+                                11. Внешняя оптимизация
+                            </div>
+                            
+                            </div>
+                            <div class="tab-pane" id="tab-12"
+                            role="tabpanel">
+                            <div class="make-sure-title">
+                                12. Оценка отдачи
+                            </div>
+                            
+                            </div>
+                            <div class="tab-pane" id="tab-13"
+                            role="tabpanel">
+                            <div class="make-sure-title">
+                                13. Комплексные задачи
+                            </div>
+                            
+                            </div>
+                            <div class="tab-pane" id="tab-14"
+                            role="tabpanel">
+                            <div class="make-sure-title">
+                                14. Повтор цикла
+                            </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section><!--/Make_sure-section-->
+
+    <script src="assets/js/jquery.twentytwenty.js"></script>
+    <script src="assets/js/jquery.event.move.js"></script>
     <script src="assets/js/script.js"></script>
+    
+
 </body>
 </html>
