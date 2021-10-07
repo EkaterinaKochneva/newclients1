@@ -542,7 +542,7 @@ p{
     position: absolute;
     content: url(../img/icons/star.png);
     bottom: -150%;
-    right: 7px;
+    right: -7px;
 }
 .main-questions__item--3{
     width: 177px;
@@ -958,7 +958,20 @@ p{
 }
 /* Make_sure-section */
 .make-sure{
+    position: relative;
     padding-top: 87px;
+    padding-bottom: 115px;
+}
+.make-sure::before{
+    position: absolute;
+    content: url(../img/flash.png);
+    left: 41%;
+    top: 31%;
+    z-index: 1;
+}
+.make-sure .container{
+    position: relative;
+    z-index: 2;
 }
 .make-sure-h2{
     margin-bottom: 26px;
@@ -969,6 +982,15 @@ p{
 .make-sure-desc{
     max-width: 405px;
     margin-bottom: 37px;
+}
+.make-sure-tabs{
+    position: relative;
+}
+.make-sure-tabs::after{
+    position: absolute;
+    content: url(../img/icons/star.png);
+    bottom: -10%;
+    right: 11%;
 }
 .make-sure-tabs .nav-tabs{
     border-bottom: none;
@@ -989,6 +1011,7 @@ p{
     align-items: center;
     justify-content: center;
     transition: all .3s ease;
+    background: #fff;
 }
 .make-sure-tabs .nav-link:hover{
     border-color: #e9b731;
@@ -998,6 +1021,62 @@ p{
     background: linear-gradient(0deg,#e9b731 0,#e9cd31);
     font-weight: 500;
     border: 1px solid hsla(0,0%,58%,.3);
+}
+.make-sure-content{
+    position: relative;
+    height: calc(100% - 15px);
+    background-color: #f6f7fa;
+    padding: 33px 50px;
+    margin-top: 15px;
+    border-radius: 9px;
+}
+.make-sure-content::after{
+    position: absolute;
+    content: url(../img/icons/2-arrows.png);
+    top: 24%;
+    right: -15%;
+    transform: scale(-1.1,1.1) rotate(-15deg);
+}
+.make-sure-title{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.make-sure-text{
+    margin-bottom: 20px;
+}
+.make-sure-list ul{
+    list-style: none;
+    margin-bottom: 0;
+    margin-left: 13px;
+    padding-left: 0;
+}
+.make-sure-list ul li {
+    position: relative;
+    line-height: 1.7;
+    font-size: 14px;
+    margin-bottom: 7px;
+    padding-left: 25px;
+}
+.make-sure-list ul li::before{
+    content: "";
+    display: block;
+    width: 8px;
+    height: 5px;
+    position: absolute;
+    border-bottom: 1px solid #282828;
+    border-left: 1px solid #282828;
+    top: 7px;
+    left: 0;
+    z-index: 1;
+    transform: translateY(10%) rotate(-45deg);
+}
+.cases-section--2{
+    padding-top: 100px;
+    background-color: #f6f7fa;
+}
+.cases-section--2 .main-h2{
+    text-align: center;
 }
 /* Медиа */
 @media (max-width: 992px){
