@@ -464,7 +464,7 @@ p{
     background: linear-gradient(to bottom,rgba(255,255,255,0),#e9bd32), url(../img/questions-bg.jpg) no-repeat;
     background-size: cover;
 }
-.main-questions::before, .results-section::before{
+.main-questions::before, .results-section::before, .test-section::before{
     position: absolute;
     display: block;
     content: "";
@@ -1083,7 +1083,7 @@ p{
 }
 /*Cases-section--2 */
 .cases-section--2{
-    padding-top: 100px;
+    padding: 100px 0 114px;
     background-color: #f6f7fa;
 }
 .cases-section--2 .main-h2{
@@ -1271,7 +1271,139 @@ p{
     background-color: #e9be32;
     color: #fff;
 }
- 
+ /* Test-section */
+ .test-section{
+    position: relative;
+    background: linear-gradient(to bottom,#f6f7fa,#e9bd32);
+ }
+ .test-section::before{
+    background: url(../img/iron-man-2.jpg) center left no-repeat, #fff;
+ }
+ .test__block{
+     position: relative;
+     padding: 89px 0 112px;
+ }
+ .test__block-h2{
+     margin-bottom: 28px;
+ }
+ .test__block-text{
+     max-width: 380px;
+     margin-bottom: 35px;
+     position: relative;
+ }
+ .test__block-text::after{
+     content: url(../img/icons/intro-arrow.png);
+     position: absolute;
+     top: -91%;
+     right: -42%;
+ }
+ /* Our-SEO */
+ .our-seo-section{
+    background: url(../img/captain-america.png) left no-repeat, #e9be32;
+    background-position: 24% 127%;
+    padding: 96px 0 75px;
+    overflow: hidden;
+ }
+ .our-seo-section .main-h2 h2{
+     color: #fff;
+ }
+ .our-seo__list{
+     padding-left: 0;
+     padding-top: 11px;
+ }
+ .our-seo__list li{
+    list-style-type: none;
+    position: relative;
+    padding-left: 56px;
+    margin-bottom: 26px;
+ }
+ .our-seo__list li::before{
+    content: url(../img/icons/target.svg);
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    left: 0;
+    top: 2px;
+ }
+ .our-seo__list li:nth-child(2)::before{
+    content: url(../img/icons/money.svg);
+ }
+ .our-seo__list li:nth-child(3)::before{
+    content: url(../img/icons/rocket.svg);
+ }
+ .our-seo__list strong{
+     display: block;
+     font-size: 21px;
+     margin-bottom: 8px;
+ }
+ /* Compare-section */
+ .compare-section{
+    position: relative;
+    background: linear-gradient(to top,#f6f7fa,#e9bd32);
+    padding: 92px 60px;
+ }
+ .compare-section::before{
+    position: absolute;
+    display: block;
+    content: "";
+    background-color: #fff;
+    height: 100%;
+    width: 91%;
+    top: 0;
+    right: 9%;
+    border-radius: 0 60px 60px 0;
+ }
+ .compare-section .container{
+     position: relative;
+ }
+ .compare-section .main-h2 h2{
+     text-align: center;
+     margin-bottom: 45px;
+ }
+ .compare__head{
+     border-bottom: 2px solid #e9bd32;
+     font-family: 'Raleway', sans-serif;
+     font-weight: 700;
+     font-size: 24px;
+     color: #888888;
+     padding-bottom: 15px;
+ }
+ .compare__title{
+     display: inline-block;
+     background-color: #e9be32;
+     border-radius: 7px;
+     padding: 0 19px;
+     line-height: 1.7;
+     color: #282828;
+ }
+ .compare__item{
+     padding: 14px 0 18px;
+     border-bottom: 1px solid #dfdfdf;
+     font-size: 14px;
+     line-height: 1.7;
+     cursor: pointer;
+     position: relative;
+     z-index: 1;
+ }
+ .compare__item:last-child{
+     border-bottom: none;
+ }
+ .compare__item::before{
+    position: absolute;
+    border-radius: 7px;
+    content: "";
+    top: -1px;
+    bottom: -1px;
+    left: -2.3%;
+    right: -2.3%;
+    z-index: -1;
+    opacity: 0;
+    transition: all .3s ease;
+ }
+ .compare__item:hover::before{
+    background-color: #f6e5ad;
+    opacity: 1;
+ }
 /* Медиа */
 @media (max-width: 992px){
     .container{
